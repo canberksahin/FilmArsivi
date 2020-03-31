@@ -17,7 +17,7 @@ namespace FilmArsivim
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-427L4HT;Initial Catalog=FilmArsivim;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=FilmArsivim;Integrated Security=True");
         void Filmler()
         {
             SqlDataAdapter da = new SqlDataAdapter("Select AD,KATEGORI,LINK from TBLFILMLER", con);
